@@ -85,6 +85,10 @@ mutate()
 summarize()
 group_by()
 
+count()
+gather()
+spread()
+
 
 
 # 9-1. filter -------------------------------------------------------------
@@ -93,6 +97,17 @@ summary(gap)
 
 gap %>% filter(continent == 'Asia' & str_detect(country, "Ho") & str_sub(year,1,2) == '20')
   
+
+
+
+# 9-2. summarise, group_by ------------------------------------------------
+
+gap %>% summarize (count = sum(continent == 'Asia'), prop = mean(continent == 'Asia'))
+
+gap %>% group_by(continent) %>% 
+  summarize(count = n()) %>% 
+  mutate(prop = count/sum(count))
+
 
 
 # 10. ?????? ?????? -------------------------------------------------------------------
