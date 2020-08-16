@@ -33,6 +33,49 @@ gap <- gapminder
 
 
 
+
+# ## ?????? -------------------------------------------------------------------
+
+4 + 3
+5 - 5
+3 * 5
+(5 + 5)/3
+2^5
+28%%6
+
+x <- 32.5
+
+cancer <- 1000
+mi_stroke <- 1500
+
+cancer + mi_stroke
+total_fa <- cancer + mi_stroke
+
+total_fa
+
+rider <- "mr"
+rider
+
+riders <- c("mr", "cancer", "mi", "stroke", "hos", "life")
+riders
+
+amount <- c(3000, 5000, 5000, 5000, 5000, 10000)
+
+boolean <- c(TRUE, FALSE)
+
+class(riders)
+class(total_fa)
+class(boolean)
+
+names(amount) <- riders
+
+amount[1] <- 6000
+amount
+
+tail(iris)
+
+iris[1:2,]
+
 # 4. Data ?????? ???????????? ---------------------------------------------------------
 
 dim(gapminder)
